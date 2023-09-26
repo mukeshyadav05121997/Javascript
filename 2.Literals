@@ -1,0 +1,47 @@
+1.Literals: Literals are constant values assigned to constant variables. Literals represent fixed values that cannot be modified. Literals are a synthetic representation of boolean,
+           character, numeric, or string data, a medium of expressing particular values in the program.
+    Example:
+            const firstName=`Jonas`;
+            const Value="I am" +firstname+ "Yadav";
+            
+2.If-Else Statement:
+           const age=21;
+           const dLvalidate=age>18;
+           if(dLvalidate)
+           {
+            console.log('you are allowed');
+           }
+           else
+           {
+            console.log("you need to wait");
+           }
+           
+3.Operator:
+  a)Arithmetic Operator:(+,-,*,/,++,--)
+      Example:1 
+      let age=2023-1995;
+      alert(age);  output:26year
+
+      Example:2
+      Let firstName='Mukesh';
+      let lastName='Yadav';
+      console.log(firstname+lastname) o/p:MukeshYadav
+      
+  b)Assignment Operator:(=,+=,-=,*=)
+      Example:1
+      x+=y=x+y
+
+  c)Adding string and Number:
+     Example:
+            let x=5+5;  o/p=10
+            let y="5"+5; o/p=10
+            let y="Hello"+5; o/p=Hello5
+            
+  d)Comparison Operator:(==,===,!==,>,<)
+     Example:
+            let ageM=25;
+            let ageN=26
+       Console.log(ageM>ageN)
+            
+     
+    
