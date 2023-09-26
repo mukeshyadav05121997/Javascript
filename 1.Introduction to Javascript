@@ -1,0 +1,29 @@
+1.Strength of JavaScript:Javascript is a High level,Object oriented,multi-paradigm programming language.
+ a)ubiquitous
+ b)speed
+ c)Easy but powerful.
+
+2.Data Type:
+  a)Primitive Data Type
+     * String
+     * Number
+     * Boolean
+     * Undefined
+     * Null
+     * Symbol
+     * Bigint
+
+Note:Javascript is dynamic typing because we do not have to manually define the dataype of value stored in the variable,instead datatype are determined automatically.
+
+3.Let, Var and const:
+  a)Let:
+         Let age=30;
+             age=31;
+         Note:overide using other variable or muted
+  b)const:
+         const age=30;
+               age=31;
+        Note:Error will through ,must initialize
+  c)var:
+        var name='Mukesh';
+        console.log(name);
