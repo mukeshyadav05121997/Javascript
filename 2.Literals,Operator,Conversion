@@ -42,6 +42,11 @@
             let ageM=25;
             let ageN=26
        Console.log(ageM>ageN)
+
+TypeConversion and TypeCoercion:
+  1)Type Coercion:Hiddenly done by JS Compiler.
+  2)Type Conversion:Manually done by Compiler.
+    
             
      
     
