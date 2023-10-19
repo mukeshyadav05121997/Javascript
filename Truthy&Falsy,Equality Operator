@@ -1,0 +1,14 @@
+* Falsy value are 0,'',undefined,null,NAN
+  Ex:
+    console.log(Boolean(0)); o/p false
+    console.log(Boolean('')); o/p false
+    console.log(Boolean(undefined)); o/p false
+    console.log(Boolean(null)); o/p false
+    console.log(Boolean(NaN)); o/p false
+
+* Equality Operator(== & ===)
+  ==   =>Loose Type Opertaor
+  ===  => strict type
+     Ex: '18' === 18 o/p false
+          '18' == 18 o/p true  
+
