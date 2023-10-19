@@ -46,6 +46,14 @@
 TypeConversion and TypeCoercion:
   1)Type Coercion:Hiddenly done by JS Compiler.
   2)Type Conversion:Manually done by Compiler.
+   Example:
+          const inputYear=1997; 
+          console.log(inputYear); o/p 1997
+          console.log(Number(inputYear),inputYear); o/p 1997 1997
+          console.log(Number(inputYear) + 18); o/p 2015
+          console.log(number('Mukesh'))   o/p Uncaught ReferenceError: number is not defined
+    
+
     
             
      
