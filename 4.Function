@@ -1,4 +1,40 @@
 A JavaScript function is a block of code designed to perform a particular task.
 A JavaScript function is executed when "something" invokes it (calls it).
 
-Function Logger
+  Example:
+1.Without Parameter
+  function logger()
+  {
+    console.log('My Name is Mukesh');
+  }
+  logger();
+
+2.With Parameter
+function logger(apple,orange)
+{
+    const juice=`This juice is made by ${apple} and ${orange}`;
+    return juice;
+}
+var juice=logger(2,3);
+console.log(juice);
+
+Anonymous function:
+The function in which function name can ommited is known as Anonymous Function;
+var calc=function(birthDay)
+{
+    return 2023-birthDay;
+}
+console.log(calc(1995));
+
+Arrow Function:
+const BasicDetails=(firstName,birthYear)=>
+{
+    const Name=firstName;
+    const totalYear=2023-birthYear;
+    return `The name is ${Name} and i am ${totalYear} year old`;
+
+}
+console.log(BasicDetails('Mukesh',1996));
+
+
+
