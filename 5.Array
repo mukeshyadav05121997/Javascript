@@ -17,4 +17,20 @@ Array Operation:
       friendList.push('Arjun');
       console.log(friendList);  o/p: (4) ['Mukesh', 'Booby', 'Urmi', 'Arjun']
 
-  *Unshift:
+  *Unshift:push the data at the begining
+      var friendList =['Rakesh','Lokesh']; 
+      console.log(friendList);   o/p (2) ['Rakesh', 'Lokesh']
+      friendList.unshift('Mukesh') 
+      console.log(friendList);   o/p (3) ['Mukesh', 'Rakesh', 'Lokesh']
+
+  *pop:delete from end
+       var friendList =['Rakesh','Lokesh'];
+       friendList.pop(); 
+       console.log(friendList); o/p:['Rakesh']
+
+  shift:delete from start
+    var friendList =['Rakesh','Lokesh'];
+    friendList.shift(); 
+    console.log(friendList); o/p: ['Lokesh']
+      
+
