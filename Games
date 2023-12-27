@@ -1,0 +1,9 @@
+1.Rolling the Dice--
+var dice=document.querySelector('.dice');
+btnRoll.addEventListener('click',function()
+{
+ var diceNumber=Math.trunc(Math.random()*6)+1;
+
+ dice.classList.remove('hidden');
+ dice.src=`dice-${diceNumber}.png`;
+});
