@@ -1,1 +1,36 @@
+DOM:
+Document Object Model is structured Representation of HTML Document Allows Javascript to access
+HTML Element and styles to manipulate.
+
+1.Click Even on button:************************************
+HTML--
+  <button class="show_Model">Click 1 </button>
+Script:
+
+var showmodel=document.querySelectorAll(`.show_Model`);
+console.log(showmodel);
+
+for(var i=0;i<=showmodel.length;i++)
+{
+    showmodel[i].addEventListener(`click`,function()
+    {
+        console.log(`Clicked Event`  );
+    } 
+    );
+}
+
+2.Escape Button click************************
+
+var showmodel=document.querySelectorAll(`.show_Model`);
+console.log(showmodel);
+
+
+document.addEventListener('keydown',function(e)
+{
+    if(e.key==='Escape')
+    {
+        console.log("Escape is working fine ");
+    }
+}
+);
 
