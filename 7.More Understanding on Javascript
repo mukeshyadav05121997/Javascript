@@ -1,0 +1,32 @@
+Javascript is :
+1.High level
+2.Garbage Collected
+3.Interpreted or just in Time Compiled
+4.Multipradigm
+5.Prototype
+6.first class function
+7.Dynamic
+8.Single-threaded
+9.Non-Blocking event loop
+
+The Javascript Engine and Runtime:
+JS Engine:-program that executes javascript code. ex:V8 Engine
+it is two type:
+1.Call stack:code executed
+2.Heap:object stored
+
+How Code get Executed:
+Compilation:Entire code is convereted into machine code at once and written to the binary code that can be executed by the Computer.
+
+source code-> Machine code -> Program Runing
+
+Interpretation:-Interpreter runs through the source code and execute it line by line so its slow.
+JIT:Just in Time Compilation ,,entite code is converted in to machine code at once,then executed immediately.
+Note:Source code get compile and converted into machine code and get executed the Program.
+
+
+
+
+
+
+
