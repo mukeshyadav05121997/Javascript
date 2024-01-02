@@ -24,6 +24,16 @@ Interpretation:-Interpreter runs through the source code and execute it line by 
 JIT:Just in Time Compilation ,,entite code is converted in to machine code at once,then executed immediately.
 Note:Source code get compile and converted into machine code and get executed the Program.
 
+Primitive vs Object:
+Primitive are known as Primitive type and store in call stack
+object are reference type and store in heap.
+
+example:
+const me={
+name:'Mukesh',
+age:30
+}
+
 
 
 
