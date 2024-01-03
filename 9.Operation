@@ -1,0 +1,41 @@
+1.Spread Operator:
+The Spread operator allows an iterable to expand in places where 0+ arguments are expected. 
+It is mostly used in the variable array where there is more than 1 value is expected.
+example:
+const arr=['Mukesh','Lokesh'];
+const badArray=['Arjun',arr[0],arr[1]];
+console.log(badArray);
+
+const goodArray=['Arjun',...arr]
+console.log(goodArray);
+
+2.Rest Operator:-
+The rest operator is used to put the rest of some specific user-supplied values into a JavaScript array.
+The three dots ( ... ) in the symbolize the rest operator. 
+
+const arr=['Mukesh','Lokesh','Arjun'];
+const[FirstName,...other]=arr
+console.log(`My name is ${FirstName} and other friend name is ${other}`); 
+
+3.Short-Circuiting:
+its takes only Truthy value.
+console.log(3 ||'Jonas'); 3
+console.log(``||'Jonas'); jonas
+console.log(true || 0); true
+console.log(undefined ||null); null
+
+4.Nullish coalescing operator
+The nullish coalescing (??) operator is a logical operator that returns its right-hand side operand 
+when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.
+
+const guest=0;
+const guestno=guest || 10;
+console.log(guestno);
+
+const newGuestno = guest ??  10;
+console.log(newGuestno);
+
+5.For In Loop:
+ for(const item in Menu)
+ {}
+
