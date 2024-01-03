@@ -32,5 +32,21 @@ Array Operation:
     var friendList =['Rakesh','Lokesh'];
     friendList.shift(); 
     console.log(friendList); o/p: ['Lokesh']
+
+Destructuring of Array:-
+const arr=['Mukesh','Lokesh'];
+const[x,y]=arr;
+console.log(`The values are ${arr[0]} and ${y}`) o/p The values are Mukesh and Lokesh
+
+Default:
+const arr=['Mukesh','Lokesh'];
+const[x,y,z]=arr;
+console.log(`The values are ${x} and ${y} and ${z}`)  o/p The values are Mukesh and Lokesh and undefined
+
+const arr=['Mukesh','Lokesh'];
+const[x,y,z=1]=arr;
+console.log(`The values are ${x} and ${y} and ${z}`) o/p The values are Mukesh and Lokesh and 1
+
+
       
 
