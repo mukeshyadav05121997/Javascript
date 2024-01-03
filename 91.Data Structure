@@ -1,1 +1,13 @@
+Sets:
+A JavaScript Set is a collection of unique values. Each value can only occur once in a Set. A Set can hold any value of any data type.
+syntex:-
+const orderSet=new Set(
+    [
+        'Pizza',
+        'Burger',
+        'Sandwich',
+        'Burger'
+    ]
+);
 
+console.log(orderSet)
