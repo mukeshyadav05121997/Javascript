@@ -30,9 +30,16 @@ object are reference type and store in heap.
 
 example:
 const me={
-name:'Mukesh',
-age:30
-}
+    name:'Mukesh',
+    age:31
+};
+
+let moreDetails=me;
+console.log(me);
+console.log(moreDetails);
+
+me.age=32;
+console.log(me);
 
 
 
