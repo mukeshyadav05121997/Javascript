@@ -1,19 +1,21 @@
 This Keyword:
-This keyword/variable are special variable that is created for every execution context(every function).
+“This” keyword refers to an object that is executing the current piece of code. 
+It references the object that is executing the current function. 
+If the function being referenced is a regular function, “this” references the global object.
 Takes the value of(point to) the "owner" of the function in which the this keyword is used.
 
 This is Not static,it depend on how the function is called,and its value is only assigned when the function is actually called.
 
 example:
-const jonas={
-name:jonas;
-year:1995;
-calcAge Function()
-{
-return 2023-this.year;
+let Deatail={
+    name:'Mukesh',
+    year:1997,
+    Ageculate()
+    {
+        return 2023-this.year;
+    },  
 }
-};
 
-jonas.calcAge();
+console.log(Deatail.Ageculate());
 
 Note:this does not point to the function itself,and also Not the its variable environment.
