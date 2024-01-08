@@ -36,5 +36,63 @@ const BasicDetails=(firstName,birthYear)=>
 }
 console.log(BasicDetails('Mukesh',1996));
 
+-----------------------------------------------------------------------------
+1.Default Parametere
+
+const bookings=[];
+const currentBooking=(FlightNumber,Passenger,Price=566)=>
+{
+    const booking={
+        FlightNumber,
+        Passenger,
+        Price
+    };
+
+    console.log(booking);
+    bookings.push(booking);
+}
+
+currentBooking('B5673',542,7999);
+console.log(bookings);
+--------------------------------------------------------------------------------------------------------------------------------------
+2.Function return function
+const greet=function(greeting)
+{
+    return function(name)
+    {
+        console.log(`${greeting} ${name}`);
+    };
+};
+
+
+const greeter=greet('Hey');
+greeter('Mukesh');
+
+Arrow Function:
+const greet=greeting=>name=>
+{
+    console.log(`${greeting} ${name}`);
+}
+
+const greeter=greet('Hey');
+greeter('Mukesh');
+-------------------------------------------------------------------------------------------------------------------------------------
+Bind Method:-
+
+-------------------------------------------------------------------------------------------------------------------------------------
+Immediately Invoked Function Expression:
+(function()
+{
+    console.log('This is Practice');
+})();
+
+//or
+
+(()=>
+{console.log('This is another Practice');
+})();
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Closure:
 
 
