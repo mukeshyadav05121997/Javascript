@@ -47,6 +47,7 @@ const arr=['Mukesh','Lokesh'];
 const[x,y,z=1]=arr;
 console.log(`The values are ${x} and ${y} and ${z}`) o/p The values are Mukesh and Lokesh and 1
 
+---------------------------------------------------------------------------------------------------------------------------------------
 
       
 
