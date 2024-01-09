@@ -1,0 +1,60 @@
+Strings:Combination of character is known as String.
+
+const airLine='This is India';
+
+console.log(airLine[0]); //output will be T
+console.log(airLine[4]); //output will be space
+console.log(airLine.length); // 13 total length
+console.log(airLine.indexOf('s')); // 3
+console.log(airLine.lastIndexOf('i')) // 11
+console.log(airLine.indexOf('is')); // 2 and case sensitive
+console.log(airLine.slice(4)); // is India 
+console.log(airLine.slice(4,7)); // is
+
+//////////toLower Case/////////
+const lowerCash=airLine.toLowerCase();
+console.log(lowerCash);
+
+/////////To Upper cash/////////
+const upperCash=airLine.toUpperCase();
+console.log(upperCash);
+
+///////////Replace///////////////
+const replaceFunction=airLine.replace('India','Bharat'); 
+console.log(replaceFunction);
+
+//////////Boolean Operation///////
+const boolOperation='India Airline Indigo';
+console.log(boolOperation);
+console.log(boolOperation.includes('Indigo')); //True
+console.log(boolOperation.startsWith('Indigo')); //false
+console.log(boolOperation.endsWith('Indigo')); //true
+
+///////Split string///////////////
+const splitOperation='India Airline Indigo';
+console.log(splitOperation.split(' ')); // ['India','Airline','Indigo']
+
+const[Country,...others]=splitOperation.split(' ');
+console.log(Country); //India
+console.log(others); //'Airline' ,'Indigo'
+
+///////Padding /////////////////
+
+const message='Go to Goa';
+console.log(message.padStart(20,'*').padEnd(30,'*'));//***********Go to Goa**********
+
+//////Masking /////////////////
+
+const masking=number=>
+{
+    const str=number + ' ';
+    const last=str.slice(-5);
+    return last.padStart(str.length,'*');
+}
+console.log(masking(123456789)); ////*****6789
+
+///////Repaeat///////////////////
+console.log(message.repeat(2)); //Go to Goa Go to Goa
+
+
+
