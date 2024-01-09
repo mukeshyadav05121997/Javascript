@@ -1,13 +1,41 @@
 Sets:
 A JavaScript Set is a collection of unique values. Each value can only occur once in a Set. A Set can hold any value of any data type.
-syntex:-
-const orderSet=new Set(
+It will remove duplicate value.
+
+var orderSet=new Set(
     [
-        'Pizza',
-        'Burger',
-        'Sandwich',
-        'Burger'
+        'pasta',
+        'maggi',
+        'coke',
+        'juice'
+
     ]
 );
 
-console.log(orderSet)
+console.log(orderSet.size); //Size of set
+console.log(orderSet.has('Pasta')); //true and it will case sensitive
+console.log(orderSet.add('Garlic Bread')); //add new value
+console.log(orderSet.delete('juice'));// it will true and selete the value
+
+for(const order of orderSet)
+{
+    console.log(order);
+
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Maps:
+A Map holds key-value pairs where the keys can be any datatype. 
+A Map remembers the original insertion order of the keys. A Map has a property that represents the size of the map.
+
+const rest=new Map();
+rest.set('Name:','Mukesh');
+rest.set('Age:',18);
+rest
+.set('category',['Male','Female'])
+.set('true','Welcome')
+.set('false','bye');
+
+console.log(rest.get('category'));
+
+
