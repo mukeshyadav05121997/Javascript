@@ -48,6 +48,79 @@ const[x,y,z=1]=arr;
 console.log(`The values are ${x} and ${y} and ${z}`) o/p The values are Mukesh and Lokesh and 1
 
 ---------------------------------------------------------------------------------------------------------------------------------------
+var arr=['a','b','c','d','e'];
+
+/////////Slice///////
+console.log(arr.slice(2)); //(3) ['c', 'd', 'e']
+console.log(arr.slice(2,4)); //(2) ['c', 'd']
+console.log(arr.slice(-2)); //(2) ['d', 'e']
+console.log(arr.slice()); //(5) ['a', 'b', 'c', 'd', 'e']
+console.log(...arr); //a b c d e
+
+///////Splice ////////
+//It will delete from original array after performing Splice operation and Muted
+console.log(arr.splice(-2)); //(2) ['d', 'e']
+console.log(...arr);//a b c
+
+////////Reverse ///////
+///reverse and mutable
+const arr2=['f','g','h','i'];
+console.log(arr2.reverse()); //['i', 'h', 'g', 'f']
+console.log(arr2); //['i', 'h', 'g', 'f']
+
+///////Concat ////////
+const allItem=arr.concat(arr2);
+console.log(allItem); //(7) ['a', 'b', 'c', 'i', 'h', 'g', 'f']
+
+/////Join////////////
+const joinAllItem=allItem.join(',');
+console.log(joinAllItem); //a,b,c,i,h,g,f
+
+/////Looping Array forEach //////
+const movementTransaction=[15,-20,30,-45];
+for(const movement of movementTransaction)
+{
+    if(movement>0)
+    {
+        console.log(`Amount credited Rs ${movement} `);
+    }
+    else
+    {
+        console.log(`Amount Debited Rs ${movement}`);
+    }
+}
+//or////Using forEach //////
+
+movementTransaction.forEach(function(movement)
+{
+    if(movement>0)
+    {
+        console.log(`Amount credited Rs ${movement}`);
+    }
+    else
+    {
+        console.log(`Amount debited Rs ${movement}`);
+    }
+})
+
+/////Maps in forEach loop/////////////
+
+var currency=new Map(
+[
+    ['Name','Mukesh'],
+    ['Age',27],
+    ['Gender','Male']
+])
+currency.forEach(function(key,value,map)
+{
+    console.log(`The Details of Employee is ${value} :${key}`);
+})
+
+////Sets in forEach loop/////////////
+var setCurrency=new Set(
+    ['Rupee','USD','Euro']
+)
+console.log(setCurrency);
 
       
 
