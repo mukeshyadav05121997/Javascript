@@ -121,6 +121,44 @@ var setCurrency=new Set(
     ['Rupee','USD','Euro']
 )
 console.log(setCurrency);
+//////////Find Operator//////////
+movementTransaction=[42,-53,65,87,-54];
+var transaction=movementTransaction.find(mov=>mov<0);
+console.log(transaction); //-53
+console.log(movementTransaction); //[42, -53, 65, 87, -54]
+
+/////////Includes ////////////
+movementTransaction=[42,-53,65,87,-54];
+console.log(movementTransaction.includes(42));//true
+
+////////Some Condition ////////
+const someOperation=movementTransaction.some(mov=>mov>90);
+console.log(someOperation);  //false
+
+///////Every Condition ///////
+const everyOperation=movementTransaction.every(mov=>mov > 0);
+console.log(everyOperation) ///false
+
+/////Dry Principle//////////
+const condition=mov=>mov>0;
+console.log(movementTransaction.some(condition)); //true
+console.log(movementTransaction.every(condition)); //false
+console.log(movementTransaction.filter(condition)); //[42, 65, 87]
+
+///////Flat method///////////
+let arr=[[1,2,3],[4,5,6],7,8];
+console.log(arr.flat()); ///[1, 2, 3, 4, 5, 6, 7, 8]
+
+///////Sorting////////////
+let nameList=['Mukesh','Arjun','Suraj','Urmi'];//Muted and its work only with string 
+console.log(nameList.sort());///(4) ['Arjun', 'Mukesh', 'Suraj', 'Urmi']
+console.log(nameList);///(4) ['Arjun', 'Mukesh', 'Suraj', 'Urmi']
+
+/////Number sorting////////
+let numer=[1,5,-6,7,4,-11,8];
+console.log(numer.sort());
+
+
 
       
 
