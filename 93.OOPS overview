@@ -1,0 +1,62 @@
+OOPS help in designing code using object 
+class:blueprint 
+object:instance
+
+===Oops have 4 fundamental:====================
+1.Abstraction
+2.Encapsulation
+3.Inheritance
+4.Polymorphism
+
+===Prototype====================================
+1.Object are linked to a prototype object;
+2.Prototype Inheritance:The Prototype contain method(Behaviour) that are accessible to all object linked to that prototype.
+Object-can access method
+Prototype-contain method
+
+Three way to implementing prototypal inheritance in Javascript:
+1.Constructor function
+2.ES6 class
+3.Object.create();
+
+==Constructor Function and New Opertaor=================
+1.Technique to create object from a function.
+2.This is how built-object like array,maps,set are actually Implemented
+
+example:
+var Person=function(firstName,age)
+{
+    this.firstName=firstName;
+    this.age=age;
+};
+
+var details=new Person('Mukesh',28);
+console.log(details)
+
+===Prototype==========================================
+var Person=function(firstName,age)
+{
+    this.firstName=firstName;
+    this.age=age;
+ //This is not good Practice because it will execute for each request
+    /*function calcAge()
+    {
+
+    }*/
+};
+
+Person.prototype.calcAge=function()
+{
+    return console.log(2023-this.age);
+}
+
+var details=new Person('Mukesh',28);
+console.log(details)
+
+details.calcAge(1996)
+
+=====ES6 CLASS===================
+
+
+
+
