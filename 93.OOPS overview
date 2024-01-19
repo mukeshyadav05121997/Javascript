@@ -9,6 +9,7 @@ object:instance
 4.Polymorphism
 
 ===Prototype====================================
+Every object in JavaScript has a built-in property, which is called its prototype.
 1.Object are linked to a prototype object;
 2.Prototype Inheritance:The Prototype contain method(Behaviour) that are accessible to all object linked to that prototype.
 Object-can access method
@@ -17,7 +18,7 @@ Prototype-contain method
 Three way to implementing prototypal inheritance in Javascript:
 1.Constructor function
 2.ES6 class
-3.Object.create();
+3.Object.create(); 
 
 ==Constructor Function and New Opertaor=================
 1.Technique to create object from a function.
@@ -56,6 +57,33 @@ console.log(details)
 details.calcAge(1996)
 
 =====ES6 CLASS===================
+1.Classes are not hoisted(means cant use before declaration)
+2.classes are first-class citizen(pass to function and return from function);
+3.class are executed in strict mode.
+
+class Details{
+    constructor(name,birthyear){
+        this.name=name;
+        this.birthyear=birthyear;
+    }
+
+    ageCalculate(){
+        return console.log(2023-this.birthyear);
+    }
+
+    sayHi(){
+        return console.log(`Hi ${this.name}`);
+    }
+}
+
+const mukeshDetail=new Details('Mukesh',1996);
+console.log(mukeshDetail);
+mukeshDetail.ageCalculate(); //27
+mukeshDetail.sayHi(); //Hi Mukesh
+
+---Getter&Setter---
+
+
 
 
 
