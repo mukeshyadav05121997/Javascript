@@ -81,7 +81,30 @@ console.log(mukeshDetail);
 mukeshDetail.ageCalculate(); //27
 mukeshDetail.sayHi(); //Hi Mukesh
 
----Getter&Setter---
+---Getter&Setter----------------------------------
+
+const account={
+    owner:'Mukesh',
+    transaction:[200,400,150,350],
+
+    get transactionGet()
+    {
+        return this.transaction.slice(-1).pop();
+
+    },
+
+    set transactionSet(mov)
+    {
+        return this.transaction.push(mov);
+
+    },
+};
+
+console.log(account.transactionGet);
+
+console.log(account.transaction);
+
+account.transactionSet(20);
 
 
 
