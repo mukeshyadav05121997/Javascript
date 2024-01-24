@@ -1,0 +1,19 @@
+==Geolocation API================
+if(navigator.geolocation)
+{
+    navigator.geolocation.getCurrentPosition(
+        function(position)
+        {
+           const{latitude}=position.coords;
+           const{longitude}=position.coords;
+           console.log(`https://www.google.co.in/maps/@${latitude},${longitude},11.25z?entry=ttu`);
+        },
+    
+        function()
+        {
+            alert("Could not got your position")
+        }
+    );
+}
+
+===
