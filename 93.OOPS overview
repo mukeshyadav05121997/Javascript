@@ -125,6 +125,32 @@ document.getElementById("demo").innerHTML = Car.hello();
 // document.getElementById("demo").innerHTML = myCar.hello();
 // this will raise an error.
 
+===Object.create()===================================================
+const Details={
+  BasicDetails ()
+  {
+    console.log(2024-this.age);
+  },
+
+  other(name,age)
+  {
+    this.name=name;
+    this.age=age;
+  }
+};
+
+var mukesh=Object.create(Details);
+console.log(mukesh);
+mukesh.firstName='Mukesh';
+mukesh.age=27;
+mukesh.BasicDetails();
+
+//shortest way
+var urmi=Object.create(Details);
+urmi.other('Mukesh',27);
+console.log(urmi);
+
+
 
 
 
