@@ -1,0 +1,73 @@
+1.var StudentPersonalDetail=function(name,dob)
+{
+  this.name=name;
+  this.dob=dob;
+}
+
+StudentPersonalDetail.prototype.calculateAge=function()
+{
+  return console.log(2024-this.dob);
+}
+
+var StudentEducationDetail=function(name,dob,stream)
+{
+  StudentPersonalDetail.call(this,name,dob);
+  this.stream=stream;
+}
+
+//--Linking of Prototype------
+StudentEducationDetail.prototype=Object.create(StudentPersonalDetail.prototype);
+
+StudentEducationDetail.prototype.Greeting=function()
+{
+  return console.log(`Hi ${this.name} and you are from ${this.stream}`);
+}
+
+var Mukesh=new StudentEducationDetail('Mukesh',1996,'ECE');
+console.log(Mukesh);
+Mukesh.Greeting();
+Mukesh.calculateAge();
+=============================================================================================================================================
+Inheritance using ES6 Class-------------
+
+class PersonalDetails{
+  constructor(Name,age)
+  {
+    this.Name=Name;
+    this.age=age;
+  }
+
+  calculatorAge()
+  {
+    return console.log(2023-this.age);
+  }
+
+  greeting()
+  {
+    return console.log(`Hi ${this.Name},you are ${this.age}`);
+  }
+}
+
+class EducationalDetail extends PersonalDetails{
+  constructor(Name,age,stream)
+  {
+    super(Name,age);
+    this.stream=stream;
+  }
+
+  introduce()
+  {
+    return console.log(`Hi ${this.Name},you are from ${this.stream} background`);
+  }
+
+  calculatorAge()
+  {
+    return console.log(`Hi ${this.Name},this is overriding `);
+  }
+}
+
+var Mukesh=new EducationalDetail('Mukesh',27,'ECE');
+console.log(Mukesh);
+Mukesh.calculatorAge();
+Mukesh.greeting();
+Mukesh.introduce();
