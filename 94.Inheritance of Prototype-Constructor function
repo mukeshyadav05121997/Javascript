@@ -71,3 +71,37 @@ console.log(Mukesh);
 Mukesh.calculatorAge();
 Mukesh.greeting();
 Mukesh.introduce();
+=================================================================================================================================
+//Inheritance between classes:Object.create();
+-------------------------------------------------
+const personProto={
+  calcage()
+  {
+    console.log(2024-this.birthyear);
+  },
+
+  moreDetail(firstName,birthyear)
+  {
+    this.firstName=firstName;
+    this.birthyear=birthyear;
+  },
+};
+
+const StudentProto=Object.create(personProto);
+
+StudentProto.moreDetail=function(firstName,birthyear,stream)
+{
+  personProto.moreDetail.call(this,firstName,birthyear);
+  this.stream=stream;
+};
+
+StudentProto.intoduce=function()
+{
+  return console.log(`Hi ${this.firstName}`);
+
+};
+
+var mukesh=Object.create(StudentProto);
+mukesh.moreDetail('Mukesh',1997,'ECE');
+mukesh.intoduce();
+mukesh.calcage();
