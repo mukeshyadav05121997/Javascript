@@ -1,0 +1,16 @@
+Module,3rd party(Development)--->Bundling--->transpiling/profiling->Javascript Bundles(Production)
+
+Bunding=joining all modules into one files.
+transpiling/profiling:convert nodern javascript to old es5 so that some old browser can support.that is done by babel
+
+Note:Build process is done by Babel or webpack
+
+Module:
+1.Modules are small building blocks that we put together to build complex application.
+2.Modules can be developed in isolation  without thinking about the entire codebase.
+3.Implememt low label code in modules and imports these abstaraction into other modules.
+4.modules naturally lead to a more organize codebase.
+5.Modules allows us to easily reuse the same code ever across multiple project.
+
+Note:Modules are stored in files,exactly one module per files,
+modules are imported synchronously.
