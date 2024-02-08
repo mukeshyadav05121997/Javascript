@@ -14,3 +14,18 @@ Module:
 
 Note:Modules are stored in files,exactly one module per files,
 modules are imported synchronously.
+--------------------------------------------------------------------------------------------------------------------------
+Import and Export :
+import './shopingCart.js';
+console.log("Importing Module");
+
+var FullName="Mukesh Yadav";
+var age =27;
+
+export{FullName,age};
+-------------------------------------------------------------------------------------------------------------------------------
+Default export :
+
+-------------------------------------------------------------------------------------------------------------------------------
+when we Write NPM init,then package.json created which have all configuration.
+
