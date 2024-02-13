@@ -1,5 +1,0 @@
-Synchronous code execute line by line.Each line of code wait for last line to get executed.
-Promising:
-Handling rejected Promise:
-Try catch:
-async and await:
