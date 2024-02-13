@@ -1,1 +1,74 @@
+Synchronous Code:
+Synchronous code is executed line by line and each line of code wait for previous line to executed.
+Now if there is any line which takes longer time,then synchronous code break
+example:
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Ajax</Title>
+        <script>
+            function changeContent()
+            {
+                var myDiv=document.getElementById('content');
+                myDiv.innerHTML="<h1> Hello Urmi </h1>";
+                myDiv.style.color='green';
+                alert('Hi Name changed');
+
+            }
+
+         </script>
+    </head>
+    <body>
+        <div id="content">
+            <p>Hello Mukesh</p>
+        </div>
+        <input type="button" value="Change Name" onclick="changeContent()"/>
+
+    </body>
+</html>
+
+=============================================================================================================================
+Asynchronous method:-
+1.Asynchronous code is executed after a task that runs in the "Background" finish.
+2.Asynchronous code is non blocking code.
+3.Execution does not wait for an asynchronous task to finish.
+4.Coordinating the behaviour of code for certain period of time.
+
+ * Timeout function:
+   The setTimeout() method calls a function after a number of milliseconds.
+   setTimeout(() => { content },5000)
+   1 second = 1000 milliseconds.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Ajax</Title>
+        <script>
+            function changeContent()
+            {
+                var myDiv=document.getElementById('content');
+                setTimeout(() => {    
+                myDiv.innerHTML="<h1> Hello Urmi </h1>";
+                myDiv.style.color='green';
+                }, 5000);
+                
+                alert('Hi Name changed');
+            }
+         </script>
+    </head>
+    <body>
+        <div id="content">
+            <p>Hello Mukesh</p>
+        </div>
+        <input type="button" value="Change Name" onclick="changeContent()"/>
+    </body>
+</html>
+====================================================================================================================================
+AJAX:-
+Asynchronous javascript and XML allows us to communicate with remote web server in an asynchronous way.
+With ajax calls,we can request data from web server dynamically.
+example: client(browser)---->Webserver
+
+
+
 
