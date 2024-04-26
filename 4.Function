@@ -80,7 +80,7 @@ greeter('Mukesh');
 Bind Method:-
 
 -------------------------------------------------------------------------------------------------------------------------------------
-Immediately Invoked Function Expression:
+Immediately Invoked Function Expression:a function that runs the moment it is invoked or called in the JavaScript event loop.
 (function()
 {
     console.log('This is Practice');
